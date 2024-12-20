@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
 
           <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-[#F1F1F1]">
           <div className="md:w-[1069px] text-center font-family-[Metropolis]">
-            <p className=" mb-[20px] flex justify-center items-center w-[259px] p-[4px_10px_4px_10px] text-[#F1F1F1] font-[Inter] text-[16px] font-normal leading-[25.6px] border-[1px] border-transparent rounded-[20px] bg-[linear-gradient(93deg,_#000_0%,_rgba(0,_0,_0,_0.30)_100%)] mx-auto">
+            <p className=" mb-[20px] flex justify-center items-center w-[269px] p-[4px_10px_4px_10px] text-[#F1F1F1] font-inter text-[16px] font-[400] leading-[25.6px] border-[1px] border-transparent rounded-[20px] bg-[linear-gradient(93deg,_#000_0%,_rgba(0,_0,_0,_0.30)_100%)] mx-auto">
               Ab Frühsommer 2025 bringt die
             </p>
 
@@ -209,7 +211,7 @@ export default function Home() {
       </p>
     </section>
 
-    <section   className="relative flex flex-col items-center justify-center py-[50px] bg-white md:rounded-tl-[170px] rounded-tl-[40px] rounded-br-[40px] md:rounded-br-[170px] mb-[100px] md:mb-[200px]"
+    <section className="relative flex flex-col items-center justify-center py-[50px] bg-white md:rounded-tl-[170px] rounded-tl-[40px] rounded-br-[40px] md:rounded-br-[170px] mb-[100px] md:mb-[200px]"
     >
         <h2 className="text-center text-black text-[24px] lg:text-[44px] font-[600] mb-[10px] md:w-[854px]">
           Starten Sie mit der Prime Home Care AG in eine sorgenfreie Zukunft
@@ -239,9 +241,11 @@ export default function Home() {
           <p className="text-[36px] font-[600] leading-[52px]">
             Stundenweise Betreuung durch Prime Home Care AG
           </p>
-          <button className="bg-white text-[#04436F] rounded-[50px] py-[10px] px-[20px]">
-            weiter
-          </button>
+          <Link href="/landingpage1">
+      <button className="bg-white text-[#04436F] rounded-[50px] py-[10px] px-[20px]">
+        weiter
+      </button>
+    </Link>
         </div>
 
         {/* Second Button */}
