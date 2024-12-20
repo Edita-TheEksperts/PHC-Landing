@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="bg-[#F1F1F1]">
+    <div className="bg-[#F1F1F1] p-4">
           {/* Main Section with Image Background */}
-          <section className="relative max-w-[1300px] h-[800px] mx-auto mt-[34px]">
+          <section className="relative max-w-[1300px] h-[800px] mx-auto mt-2 md:mt-[34px]">
             {/* Logo Positioned on Top Left */}
-            <div className="absolute top-[20px] left-[67px] z-10">
+            <div className="absolute top-[5px] left-[5px] md:top-[20px] md:left-[67px] z-10">
               <Image src="/images/logo.png" alt="PHC Logo" width={131} height={60} />
             </div>
 
@@ -43,10 +43,10 @@ export default function Home() {
 
           </section>
 
-      <h2 className="text-center text-[#1C1B1D] font-[Metropolis] text-[55px] font-semibold leading-[71.5px] mb-10 mt-[200px]">
+      <h2 className="text-center text-[#1C1B1D] font-[Metropolis] text-[55px] font-semibold leading-[71.5px] mb-10 mt-[100px] md:mt-[200px]">
         Warum die Prime Home Care AG wählen?
       </h2>
-      <section className="max-w-[1280px] mx-auto flex justify-center items-center mb-[200px]">
+      <section className="max-w-[1280px] mx-auto flex justify-center items-center mb-[100px] md:mb-[200px]">
       {/* Grid Layout for Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
         {/* Card 1 */}
@@ -126,7 +126,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="flex flex-col justify-center items-center gap-8 p-4 max-w-[900px] mx-auto mb-[200px]">
+    <section className="flex flex-col justify-center items-center gap-8 p-4 max-w-[900px] mx-auto mb-[100px] md:mb-[200px]">
       {/* Section Heading */}
       <h2 className="text-center text-[#1C1B1D] leading-[71px] text-[55px] font-[600] mb-6">
         Unser Angebot im Überblick
@@ -209,18 +209,18 @@ export default function Home() {
       </p>
     </section>
 
-    <section   className="relative flex flex-col items-center justify-center py-[50px] bg-white rounded-tl-[170px] rounded-br-[170px] mb-[200px]"
+    <section   className="relative flex flex-col items-center justify-center py-[50px] bg-white md:rounded-tl-[170px] rounded-tl-[40px] rounded-br-[40px] md:rounded-br-[170px] mb-[100px] md:mb-[200px]"
     >
-        <h2 className="text-center text-black lg:text-[44px] font-[600] mb-[10px] md:w-[854px]">
+        <h2 className="text-center text-black text-[24px] lg:text-[44px] font-[600] mb-[10px] md:w-[854px]">
           Starten Sie mit der Prime Home Care AG in eine sorgenfreie Zukunft
         </h2>
-        <p className="text-center text-black text-[16px] font-normal mb-[40px]">
+        <p className="text-center text-black text-[16px] font-normal md:mb-[40px]">
           Ab Frühsommer 2025 sind wir für Sie da!
         </p>
 
         {/* Button Section */}
-        <div className="flex flex-col items-center justify-center">
-          <button className="md:py-[12px] md:px-[30px] lg:text-[18px] font-[500] text-white bg-black rounded-[50px] mb-[16px]">
+        <div className="flex flex-col items-center justify-center p-4">
+          <button className="md:py-[12px] md:px-[30px] text-[14px] lg:text-[18px] font-[500] text-white bg-black rounded-[50px] md:mb-[16px] p-2">
             Lassen Sie sich bereits jetzt unverbindlich beraten oder <br /> registrieren Sie sich, um mehr über unser Angebot zu erfahren
           </button>
         </div>
@@ -255,7 +255,7 @@ export default function Home() {
         </div>
       </div>
     </section>
-     <section className='mt-[200px]'>
+     <section className='md:mt-[200px] mt-[100px]'>
 
      </section>
     </div>
